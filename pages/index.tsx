@@ -74,7 +74,7 @@ const Home: NextPage = () => {
             },
           ].map((element) => {
             return (
-              <div className="flex items-center dark:text-gray-400">
+              <div key={element.label} className="flex items-center dark:text-gray-400">
                 <element.IconElement className="mr-2" />
                 <p>
                   {element.label}{" "}
